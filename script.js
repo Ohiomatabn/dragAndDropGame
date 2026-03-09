@@ -20,7 +20,7 @@ function createQuestionHTML() {
   let answerHTML = "";
   questionBank.forEach((question) => {
     QuestionHTML += `
-            <div class="box" data-id="${question[1]}">${question[0]}"</div>
+            <div class="box question-box" draggable="true" data-id="${question[1]}">${question[0]}"</div>
         `;
   });
   document.getElementById("questions-container").innerHTML = QuestionHTML;
@@ -30,7 +30,7 @@ function createAnswersHTML() {
   let answerHTML = "";
   questionBank.forEach((answer) => {
     answerHTML += `
-            <div class="box" data-id="${answer[1]}">${answer[0]}"</div>
+            <div class="box answer-box" draggable="true" data-id="${answer[1]}">${answer[0]}"</div>
         `;
   });
   document.getElementById("answers-container").innerHTML = answerHTML;
