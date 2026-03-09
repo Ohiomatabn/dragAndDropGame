@@ -48,7 +48,7 @@ h3 {
 
 .box {
   flex-basis: 20%;
-  min-width: 100px;
+  min-width: 200px;
   background-color: grey;
   padding: 1rem;
   border-radius: 0.5rem;
